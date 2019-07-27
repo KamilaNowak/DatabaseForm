@@ -5,5 +5,5 @@ Tools:
 - Java
 - JavaFX 
 - ORMLite with SQLlite
-- SQL (raw queries in methods)
+- SQL 
 - SceneBuilder
