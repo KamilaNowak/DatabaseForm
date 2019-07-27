@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controls.SearchController">
+   <children>
+      <Label text="SEARCH WHERE..." textAlignment="CENTER" textFill="#9a3333">
+         <font>
+            <Font name="Arial" size="27.0" />
+         </font>
+         <VBox.margin>
+            <Insets left="50.0" top="21.0" />
+         </VBox.margin>
+      </Label>
+      <HBox prefHeight="70.0" prefWidth="200.0" spacing="20.0">
+         <children>
+            <Label text="NAME  EQUALS">
+               <font>
+                  <Font name="MS Reference Sans Serif" size="21.0" />
+               </font>
+            </Label>
+            <TextField fx:id="nameEqual" />
+            <Button mnemonicParsing="false" onAction="#searchName" text="SEARCH AND SAVE" textFill="#2e00ff">
+               <font>
+                  <Font size="13.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="40.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+         <VBox.margin>
+            <Insets left="20.0" top="40.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox prefHeight="70.0" prefWidth="200.0" spacing="20.0">
+         <children>
+            <Label text="SURNAME  EQUALS">
+               <font>
+                  <Font name="MS Reference Sans Serif" size="21.0" />
+               </font>
+            </Label>
+            <TextField fx:id="surnameEqual" />
+            <Button mnemonicParsing="false" onAction="#searchSurname" text="SEARCH AND SAVE" textFill="#2e00ff">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+         </children>
+         <VBox.margin>
+            <Insets left="20.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox prefHeight="70.0" prefWidth="200.0" spacing="20.0">
+         <children>
+            <Label text="DATE EQUALS">
+               <font>
+                  <Font name="MS Reference Sans Serif" size="21.0" />
+               </font>
+            </Label>
+            <DatePicker fx:id="dateEqual" />
+            <Button mnemonicParsing="false" onAction="#searchDate" text="SEARCH AND SAVE" textFill="#2e00ff">
+               <font>
+                  <Font size="13.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="30.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+         <VBox.margin>
+            <Insets left="20.0" />
+         </VBox.margin>
+      </HBox>
+   </children>
+</VBox>
