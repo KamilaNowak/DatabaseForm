@@ -1,4 +1,3 @@
-
 #Form in JavaFX with database ORMLite using SQLite JDBC driver.
 
 Tools:
